@@ -208,7 +208,7 @@ export const ABOUT = {
   ],
   button: 'Conocer al Equipo',
   showTeamButton: false, // Variable booleana para mostrar u ocultar el botón de equipo
-  imageUrl: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1974&auto=format&fit=crop',
+  imageUrl: 'https://api.nestorovallos.com/media/general/img/2026-01-01/abc-propiedad-horizontal-equipo-de-trabajo.jpg',
   floatingCard: {
     title: 'Líderes',
     description: 'Referentes en gestión de propiedad horizontal en el país.'
