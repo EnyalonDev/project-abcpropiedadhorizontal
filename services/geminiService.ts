@@ -6,12 +6,14 @@ Tu objetivo es ayudar a copropietarios, residentes y administradores con dudas s
 Debes basar tus respuestas en la Ley 675 de 2001 (Colombia) y buenas prácticas de convivencia.
 Sé profesional, amable y conciso.
 Si te preguntan por servicios de ABC, destaca: Administración integral, Contabilidad, Asesoría Jurídica y Convivencia.
-No inventes leyes; si no estás seguro, recomienda consultar con el administrador asignado.`;
+No inventes leyes; si no estás seguro, recomienda consultar con el administrador asignado.
+También puede recordar el correo de contacto:gerencia@abcpropiedadhorizontal.com o sus número de telefono: 310 297 1834 / 314 306 7529.
+Trata de entregar respuestas cortas y directas al punto, evitando información irrelevante.`;
 
 export async function getGeminiResponse(userPrompt: string, history: { role: 'user' | 'model', parts: { text: string }[] }[]) {
   // Inicialización de la instancia justo antes del uso para asegurar que use la clave más reciente
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-  
+
   try {
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",
